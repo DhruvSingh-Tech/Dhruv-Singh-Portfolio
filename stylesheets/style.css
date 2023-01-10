@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,700&family=Ubuntu:wght@300;400;500&display=swap');
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 body {
     /* background: rgb(30, 30, 30); */
     /* background: black; */
@@ -18,7 +20,8 @@ body {
     width: 100%;
     transition: background 1s ease-in-out;
 }
-body::before{
+
+body::before {
     content: '';
     position: absolute;
     top: 0;
@@ -71,13 +74,15 @@ body::before{
     justify-content: center;
     align-items: center;
 }
-.navRow li a{
+
+.navRow li a {
     text-decoration: none;
     color: white;
 
     transition: all 2s;
 }
-.navRow li a:hover{
+
+.navRow li a:hover {
     color: #12c2e9;
 }
 
@@ -88,9 +93,12 @@ body::before{
     align-items: center;
     font-family: 'Ubuntu', sans-serif;
     letter-spacing: 0.5em;
-    background: #2980B9;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #2980B9;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     background-clip: text;
     -webkit-background-clip: text;
@@ -123,6 +131,7 @@ body::before{
     justify-content: center;
     align-items: center;
     flex: 1;
+    transition: all 2s;
 }
 
 .navRow {
@@ -132,6 +141,26 @@ body::before{
     align-items: center;
     width: 100%;
     list-style-type: none;
+    transition: all 1s;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamcross1 {
+    border-top: 3px solid white;
+    width: 38px;
+    height: 8px;
+}
+
+.hamcross2 {
+    border-top: 3px solid white;
+    width: 38px;
+    height: 8px;
 }
 
 .sec1 {
@@ -149,7 +178,7 @@ body::before{
     height: 100%;
 }
 
-.sec1_con{
+.sec1_con {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -158,39 +187,44 @@ body::before{
     position: relative;
     height: 100%;
 }
-.centertext{
+
+.centertext {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
     font-size: 72px;
-    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, transparent, #12c2e9, #c471ed, #f64f59, transparent); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, transparent, #12c2e9, #c471ed, #f64f59, transparent);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: 50%;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: devnamespace 10s ease forwards,cutecornerbg 15s linear infinite ;
-    
+    animation: devnamespace 10s ease forwards, cutecornerbg 15s linear infinite;
+
     /* background-repeat: no-repeat; */
     /* animation: cutecornerbg 2.5s ease forwards; */
 }
 
 @keyframes devnamespace {
-    0%{
-        
+    0% {
+
         letter-spacing: 0.5em;
         /* backdrop-filter: hue-rotate(220deg); */
     }
 }
+
 @keyframes cutecornerbg {
-    0%{
+    0% {
         background-position: 200%;
         /* opacity: 0; */
     }
 }
-.devContxt{
+
+.devContxt {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -199,7 +233,8 @@ body::before{
     position: relative;
     height: 100%;
 }
-.devtxt{
+
+.devtxt {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -211,12 +246,13 @@ body::before{
     font-family: 'Nunito';
     letter-spacing: 1px;
     font-size: 50px;
-    animation: fade 5s ease    forwards;
+    animation: fade 5s ease forwards;
     color: rgb(235, 235, 235);
 }
-.devtxt:nth-child(2){
+
+.devtxt:nth-child(2) {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -227,16 +263,119 @@ body::before{
     font-family: monospace;
     letter-spacing: 1px;
     font-size: 50px;
-    animation: fade 5s ease    forwards;
+    animation: fade 5s ease forwards;
     color: rgb(235, 235, 235);
 }
+
 @keyframes fade {
-    0%{
+    0% {
         opacity: 0;
         transform: scale(0.5);
     }
 }
-.ambi{
+
+.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {
+        background-color: #ccc;
+    }
+
+    49% {
+        background-color: #ccc;
+    }
+
+    50% {
+        background-color: transparent;
+    }
+
+    99% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: #ccc;
+    }
+}
+
+.typing {
+    animation: none;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.about_con {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 100px;
+}
+
+.about_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.abouthead {
+    width: 100%;
+    text-align: start;
+}
+
+.abouthead h1 {
+    position: relative;
+    width: fit-content;
+
+}
+
+.abouthead h1:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    top: 30px;
+    content: "";
+    display: block;
+    height: 5px;
+    left: 50%;
+    position: absolute;
+    /* background: #fff; */
+    background: linear-gradient(to right, transparent, #12c2e9, #c471ed, #f64f59, transparent);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.abouthead h1:hover:after {
+    width: 100%; 
+    left: 0; 
+}
+.about_ed{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+/* .ambi {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -244,15 +383,17 @@ body::before{
     width: 100%;
     height: 100%;
 }
-.ambient__container{
+
+.ambient__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
-}
-.swiper_cont{
+} */
+
+.swiper_cont {
     width: 100%;
     height: 100vh;
 }
@@ -262,6 +403,86 @@ body::before{
     height: 100vh;
     object-fit: cover;
 }
+
 /* .ambient__visible{
     width: 80% !important;
 } */
+
+
+@media screen and (max-width:640px) {
+    .nv_cont {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 80px;
+        bottom: 0;
+        height: 100vh;
+        background: #000000;
+        backdrop-filter: blur(156px);
+
+    }
+
+    .centertext {
+        font-size: 8vw;
+    }
+
+    .nv_cont.slideback {
+        display: flex;
+        animation: slidebacknav 1s ease-in-out forwards;
+    }
+
+    @keyframes slidebacknav {
+        100% {
+            transform: translateX(-600px);
+        }
+    }
+
+    .nv_cont.resp {
+        display: flex;
+        animation: slidenav 1s ease-in-out forwards;
+    }
+
+    @keyframes slidenav {
+        0% {
+            transform: translateX(-500px);
+            opacity: 0;
+        }
+    }
+
+    .nv_logo {
+        width: 100%;
+        z-index: 1;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger .hamcross1.resp {
+        animation: closetrans 1s ease-in-out forwards;
+    }
+
+    @keyframes closetrans {
+        100% {
+            transform: rotate(60deg);
+        }
+    }
+
+    .hamburger .hamcross2.resp {
+        animation: closetrans2 1s ease-in-out forwards;
+    }
+
+    @keyframes closetrans2 {
+        100% {
+            transform: rotate(120deg);
+        }
+    }
+
+    .navRow {
+        flex-direction: column;
+        height: 100%;
+        font-family: 'Ubuntu';
+        font-size: large;
+    }
+}

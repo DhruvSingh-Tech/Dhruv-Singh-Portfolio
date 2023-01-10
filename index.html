@@ -8,7 +8,7 @@
     <title>Dhruv Singh</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
     <script src="/scripts/ambience.js"></script>
-    <script src="/scripts/script.js"></script>
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
@@ -23,7 +23,7 @@
                         <h3>DHRUV SINGH</h3>
                     </div>
                 </div>
-                <div class="nv_cont">
+                <div class="nv_cont" id="getNav">
                     <ul class="navRow">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#contact">Contact</a></li>
@@ -31,6 +31,11 @@
                         <li><a href="#about">About</a></li>
                         <li><a href="#">Something Else</a></li>
                     </ul>
+                    
+                </div>
+                <div class="hamburger" onclick="responsivenav(this)">
+                    <div class="hamcross1"></div>
+                    <div class="hamcross2"></div>
                 </div>
             </div>
         </div>
@@ -41,7 +46,7 @@
                         <h5>HELLO 👋, I AM</h5>
                     </div>
                     <div class="devtxt">
-                        <h5>WEB DESIGNER</h5>
+                        <span>>>&nbsp;</span><span><p id="dvtxt"></p></span><span class="cursor">&nbsp;</span>
                     </div>
                     <div class="centertext">
                         <span><</span>
@@ -55,6 +60,24 @@
                 <img class="" alt="An image" src="https://images.unsplash.com/photo-1466854076813-4aa9ac0fc347"
                     data-ambient>
             </div> -->
+        </section>
+        <section class="about" id="about">
+            <div class="about_con">
+                <div class="about_main">
+                    <div class="abouthead">
+                        <h1>About Dev</h1>
+                    </div>
+                    <div class="about_txt">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, possimus quia iste expedita ratione nihil quo consequatur facilis? Voluptatibus exercitationem quibusdam repellat tempora deserunt culpa eaque cumque. Molestiae, numquam fuga.
+                        Alias ea rem saepe modi nesciunt maiores placeat ut ab. Ullam quo exercitationem esse, cumque tempore soluta, numquam placeat, similique eius asperiores at quis quia? Consectetur eveniet libero adipisci ducimus.</p>
+                    </div>
+                </div>
+                <div class="about_ed">
+                    <div class="abouthead">
+                        <h1>Educational Qualification</h1>
+                    </div>
+                </div>
+            </div>
         </section>
         
         <section class="swiper_cont" id="works">
@@ -106,6 +129,7 @@
             ambient.mount();
         </script>
     </div>
+    <script src="/scripts/script.js"></script>
 </body>
 
 </html>
