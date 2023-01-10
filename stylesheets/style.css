@@ -263,7 +263,7 @@ body::before {
     bottom: 0;
     font-family: monospace;
     letter-spacing: 1px;
-    font-size: 34px;
+    font-size: 24px;
     animation: fade 5s ease forwards;
     color: rgb(235, 235, 235);
 }
