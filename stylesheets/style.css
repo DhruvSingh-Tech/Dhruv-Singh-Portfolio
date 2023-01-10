@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,700&family=Ubuntu:wght@300;400;500&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body {
+    /* background: rgb(30, 30, 30); */
+    /* background: black; */
+    background: linear-gradient(to right, rgb(18, 194, 233), black, black 31%, black 62%, black, rgb(196, 113, 237), rgb(246, 79, 89));
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(211, 211, 211);
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    transition: background 1s ease-in-out;
+}
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000000e0;
+    /* background: linear-gradient(to right, #12c2e9, transparent, transparent, #c471ed, #f64f59); */
+    z-index: -1;
+}
+
+.mainBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(to right, transparent, #00000085, #000000a6, transparent);
+    position: fixed;
+    top: 0;
+    z-index: 111;
+    backdrop-filter: blur(14px);
+}
+
+.insideNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+}
+
+.nv_logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.navRow li a{
+    text-decoration: none;
+    color: white;
+
+    transition: all 2s;
+}
+.navRow li a:hover{
+    color: #12c2e9;
+}
+
+.logotxt {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 0.5em;
+    background: #2980B9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+
+}
+
+.logotxt h3:before {
+    content: '';
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    text-shadow: 2px 2px 2px black;
+    /* background-color: rgba(255, 255, 255, 0.24);
+    backdrop-filter: blur(2px); */
+
+}
+
+.nv_cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.navRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    list-style-type: none;
+}
+
+.sec1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.sec1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.sec1_con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+.centertext{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 72px;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, transparent, #12c2e9, #c471ed, #f64f59, transparent); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: devnamespace 10s ease forwards,cutecornerbg 15s linear infinite ;
+    
+    /* background-repeat: no-repeat; */
+    /* animation: cutecornerbg 2.5s ease forwards; */
+}
+
+@keyframes devnamespace {
+    0%{
+        
+        letter-spacing: 0.5em;
+        /* backdrop-filter: hue-rotate(220deg); */
+    }
+}
+@keyframes cutecornerbg {
+    0%{
+        background-position: 200%;
+        /* opacity: 0; */
+    }
+}
+.devContxt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+.devtxt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    /* bottom: 50px; */
+    font-family: 'Nunito';
+    letter-spacing: 1px;
+    font-size: 50px;
+    animation: fade 5s ease    forwards;
+    color: rgb(235, 235, 235);
+}
+.devtxt:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 400px;
+    /* top: 100px; */
+    bottom: 0;
+    font-family: monospace;
+    letter-spacing: 1px;
+    font-size: 50px;
+    animation: fade 5s ease    forwards;
+    color: rgb(235, 235, 235);
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+.ambi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.ambient__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.swiper_cont{
+    width: 100%;
+    height: 100vh;
+}
+
+.swiper {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+/* .ambient__visible{
+    width: 80% !important;
+} */

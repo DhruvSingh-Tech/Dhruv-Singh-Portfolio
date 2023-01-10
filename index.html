@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhruv Singh</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="/scripts/ambience.js"></script>
+    <script src="/scripts/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="mainBody">
+        <div class="navbar">
+            <div class="insideNav">
+                <div class="nv_logo">
+                    <div class="logotxt">
+                        <h3>DHRUV SINGH</h3>
+                    </div>
+                </div>
+                <div class="nv_cont">
+                    <ul class="navRow">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#works">Works</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#">Something Else</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section class="sec1">
+            <div class="sec1_con">
+                <div class="devContxt">
+                    <div class="devtxt">
+                        <h5>HELLO 👋, I AM</h5>
+                    </div>
+                    <div class="devtxt">
+                        <h5>WEB DESIGNER</h5>
+                    </div>
+                    <div class="centertext">
+                        <span><</span>
+                        <h1>DHRUV SINGH</h1>
+                        <span>/></span>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- <div class="ambi">
+                <img class="" alt="An image" src="https://images.unsplash.com/photo-1466854076813-4aa9ac0fc347"
+                    data-ambient>
+            </div> -->
+        </section>
+        
+        <section class="swiper_cont" id="works">
+            <div class="swiper">
+            
+                <div class="swiper-wrapper">
+                   
+                    <!-- <div class="swiper-slide" > <img src="https://source.unsplash.com/1920x1080/?dark%2Cstar%2Cnature="  data-ambient alt=""></div>
+                    <div class="swiper-slide" > <img src="https://source.unsplash.com/1920x1080/?love%2Cstar%2Cnature="  data-ambient alt=""></div>
+                    <div class="swiper-slide" > <img src="https://source.unsplash.com/1920x1080/?noon%2Cstar%2Cnature="  data-ambient alt=""></div>
+                    <div class="swiper-slide" > <img src="https://source.unsplash.com/1920x1080/?noon%2Cstar%2Cnature="  data-ambient alt=""></div> -->
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    ...
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>/
+                <div class="swiper-button-next"></div>
+
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <script>
+                const swiper = new Swiper('.swiper', {
+                    
+                    direction: 'horizontal',
+                    loop: true,
+
+                    
+                    pagination: {
+                        el: '.swiper-pagination',
+                    },
+
+                   
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+
+                    
+                    scrollbar: {
+                        el: '.swiper-scrollbar',
+                    },
+                });
+            </script>
+        </section>
+        <script>
+            var ambient = new Ambient();
+            ambient.mount();
+        </script>
+    </div>
+</body>
+
+</html>
