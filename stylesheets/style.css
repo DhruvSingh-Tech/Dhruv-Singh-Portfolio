@@ -245,7 +245,7 @@ body::before {
     /* bottom: 50px; */
     font-family: 'Nunito';
     letter-spacing: 1px;
-    font-size: 50px;
+    font-size: 38px;
     animation: fade 5s ease forwards;
     color: rgb(235, 235, 235);
 }
