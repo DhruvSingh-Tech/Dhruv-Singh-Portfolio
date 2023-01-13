@@ -1,3 +1,4 @@
+//responsivenavbar
 function responsivenav(hams){
     let nav = document.getElementById('getNav')
     let hamu = hams.children
@@ -12,11 +13,32 @@ function responsivenav(hams){
         hamu[0].classList.remove('resp')
         hamu[1].classList.remove('resp')
         nav.classList.remove("resp")
-        nav.classList.add("slideback")        
+        nav.classList.add("slideback")     
     }
 }
 
 
+//onscroll animations
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 10;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+
+
+//typinganimation
 const typedTextSpan = document.getElementById('dvtxt');
 const cursorSpan = document.querySelector(".cursor");
 
